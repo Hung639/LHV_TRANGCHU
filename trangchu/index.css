@@ -1,0 +1,308 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  position: relative;
+}
+.toolbar {
+  width: auto;
+  height: 60px;
+  background-color: #effbfb;
+}
+.imgLogo {
+  height: 60px;
+  width: 9%;
+  float: left;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+body {
+  background: #ffffff;
+}
+/* xu ly nut Search */
+.box {
+  margin: auto;
+  padding-top: 2%;
+  width: 22%;
+}
+.btn {
+  float: right;
+  line-height: 50px;
+  margin-right: 5%;
+}
+.container-1 {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search {
+  width: 300px;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* PHẦN CSS THANH MENU */
+#menu {
+  width: 100%;
+  overflow: hidden;
+  background-color: #008f00;
+  position: relative;
+}
+#menu ul {
+  /*bỏ dấu chấm tròn*/
+  list-style-type: none;
+  float: left;
+  width: auto;
+  position: relative;
+}
+
+#menu ul li {
+  float: left;
+  list-style: none;
+  margin-top: 1%;
+  margin-right: 30px;
+  height: 30px;
+  line-height: 40px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+}
+#menu ul li:last-child {
+  border-right: none;
+}
+#menu ul li:hover {
+  background: #f2fcff;
+}
+#menu ul li a:hover {
+  color: rgba(19, 95, 116, 1);
+}
+#menu ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial, sanf-serif;
+  font-size: 13px;
+  padding: 0px 15px;
+  line-height: 35px;
+  display: block;
+}
+#menu ul li ul.subMenu {
+  display: none;
+  margin-top: -10px;
+}
+#menu ul li:hover ul.subMenu {
+  display: block;
+  position: fixed;
+  width: auto;
+  background: #f2fcff;
+  z-index: 9999;
+}
+#menu ul li ul.subMenu li {
+  float: none;
+  border-bottom: 1px dashed rgba(19, 95, 116, 1);
+  width: auto;
+  margin-left: 15px;
+  border-right: none;
+  margin-right: 20px;
+  min-width: 200px;
+}
+#menu ul li ul.subMenu li:last-child {
+  border-bottom: none;
+}
+#menu ul li ul.subMenu li a {
+  color: rgba(19, 95, 116, 1);
+  line-height: 30px;
+  padding: 0px 0px;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+#menu ul li ul.subMenu li a:hover {
+  text-decoration: underline;
+  display: block;
+  color: rgba(19, 95, 116, 1);
+}
+/* PHẦN CSS BANNER */
+.banner {
+  width: auto;
+  max-height: 400px;
+}
+.mySlides {
+  width: 100%;
+  height: 400px;
+  background-size: 100% 100%;
+}
+/* PHẦN CSS THÔNG TIN LINH HOẠT VIÊN */
+.aboutLHV {
+  width: 100%;
+  height: 400px;
+}
+.informationLhv {
+  width: 55%;
+  height: 350px;
+  float: left;
+}
+h3 {
+  color: #ff500b;
+  font-size: 25px;
+  font-family: "Lemonada", cursive;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+.informationLhv p {
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 10px;
+  font-family: "Lemonada", cursive;
+  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+.row {
+  margin: 20px;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  float: left;
+  margin-left: 70px;
+  border: 1px solid green;
+}
+.informationLhvImage {
+  width: 45%;
+  height: 300px;
+  float: left;
+}
+.informationLhvImage img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+}
+/* PHẦN CSS HOẠT ĐỘNG LINH HOẠT VIÊN */
+.col-sm-4 {
+  height: 200px;
+  position: relative;
+}
+.col-sm-4 .img {
+  line-height: 0;
+  overflow: hidden;
+}
+.col-sm-4 img {
+  width: 300px;
+  height: 170px;
+  margin-left: auto;
+  margin-top: auto;
+  display: block;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+.activitiesTxt {
+  /* CSS chữ của nội dung ảnh phần hoạt động LHV */
+  font-family: "Lemonada", cursive;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 87%;
+  width: 86%;
+  margin-left: 12%;
+  margin-top: 4%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-sm-4:hover .activitiesTxt {
+  opacity: 1;
+}
+.col-sm-4:hover .img img {
+  filter: blur(2px);
+}
+@media (hover: none) {
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+/* PHẦN CSS FOOTER */
+.footer {
+  width: auto;
+  height: 200px;
+  background-color: #424242;
+}
+.footer .row .col-sm-4 h5 {
+  color: #01df01;
+  font-size: 15px;
+  font-family: "Lemonada", cursive;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+.contentFooter {
+  color: #ffffff;
+  font-size: 13px;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+  text-align: justify;
+  margin-right: 50px;
+  margin-left: 40px;
+}
+.footer .row .col-sm-3 h5 {
+  color: #01df01;
+  font-size: 15px;
+  font-family: "Lemonada", cursive;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer .row .col-sm-3 .contentFooter {
+  color: #ffffff;
+  font-size: 13px;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: justify;
+  margin-left: 0px;
+}
